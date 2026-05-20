@@ -38,6 +38,11 @@ config.font_size = font_size_by_os[current_os()] or 12.0
 
 config.keys = {
   {
+    key = "C",
+    mods = "CTRL|SHIFT",
+    action = act.CopyTo("Clipboard"),
+  },
+  {
     key = "V",
     mods = "CTRL|SHIFT",
     action = act.PasteFrom("Clipboard"),
