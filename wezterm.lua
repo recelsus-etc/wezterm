@@ -25,15 +25,8 @@ local function current_os()
   return "default"
 end
 
-config.window_background_opacity = 0.8
+config.window_background_opacity = 0.7
 
-config.font = wezterm.font_with_fallback({
-  {
-    family = "JetBrains Mono",
-    weight = "Regular",
-  },
-  "Symbols Nerd Font Mono",
-})
 config.font_size = font_size_by_os[current_os()] or 12.0
 
 config.keys = {
